@@ -1,0 +1,35 @@
+// @mixin box-shadow-2($args1, $args2) {
+//     -webkit-box-shadow: $args1, $args2;
+//     -moz-box-shadow: $args1, $args2;
+//     box-shadow: $args1, $args2;
+// }
+
+@mixin break-small() {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin break-medium() {
+  @media (min-width: 481px) and (max-width: 868px) {
+    @content;
+  }
+}
+
+@mixin break-large() {
+  @media (min-width: 869px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin break-xlarge() {
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin desktop-only() {
+  @media (min-width: 1541px) {
+    @content;
+  }
+}

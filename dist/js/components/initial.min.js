@@ -1,0 +1,1 @@
+var jQuery;void 0===jQuery&&(jQuery="function"==typeof require?$=require("jquery"):$);
